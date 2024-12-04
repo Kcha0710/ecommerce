@@ -5,7 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Contacto</title>
-</head>
+  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+       /* Fondo y fuentes */
+       body {
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        /* Título de Contacto */
+        .contact-info h2, .contact-form h3 {
+            font-size: 2.5rem;
+            color: #007bff;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-info h4 {
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .contact-info p, .contact-form p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Estilos de la sección de Contacto */
+        .contact-info {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .contact-info .col-md-4 {
+            flex: 1;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo del Formulario */
+        .contact-form {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        .contact-form textarea {
+            resize: none;
+        }
+
+        .contact-form .btn-primary {
+            background-color: #007bff;
+            border: none;
+            font-weight: 500;
+            padding: 12px 30px;
+        }
+
+        .contact-form .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+  
+  </head>
 <body>
  <!-- Contenedor principal -->
  <div class="container">
@@ -27,8 +121,70 @@
                    </header>
              </div>
          </div>
+         <div>
+        
      <!-- Fin del encabezado -->
- 
+
+<!-- Main Content -->
+ <!-- Main Content -->
+ <div class="container contact-info">
+  <h2>Contáctanos</h2>
+  <h4 class="text-center">¡Nos encantaría saber de ti! Puedes contactarnos a través de los siguientes medios:</h4>
+
+  <!-- Información de contacto -->
+  <div class="row">
+      <div class="col-md-4">
+          <h4>Dirección</h4>  
+          <p>Calle 24 #8-45, Santa Marta, Colombia</p>
+      </div>
+      <div class="col-md-4">
+          <h4>Teléfono</h4>
+          <p>+57 300 2448993</p>
+      </div>
+      <div class="col-md-4">
+          <h4>Correo electrónico</h4>
+          <p><a href="mailto:productartesanias@gmail.com" style="color: #007bff; text-decoration: none;">productartesanias@gmail.com</a></p><br>
+      </div>
+  </div>
+</div>
+
+<!-- Formulario de contacto -->
+<div class="container contact-form">
+  <h3>Envíanos un mensaje</h3><br>
+  <form action="#" method="POST">
+      <div class="row">
+          <div class="col-md-6 mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="col-md-6 mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+      </div>
+      <div class="mb-3">
+          <label for="subject" class="form-label">Asunto</label>
+          <input type="text" class="form-control" id="subject" name="subject" required>
+      </div>
+      <div class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div class="text-center">
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      </div>
+  </form>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+      
      <!-- Pie de pagina -->
          <div class="row">
              <div class="col-sm-12">
@@ -47,6 +203,7 @@
      <!-- Fin del pie de pagina -->
      </div>
      
+    
      <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
